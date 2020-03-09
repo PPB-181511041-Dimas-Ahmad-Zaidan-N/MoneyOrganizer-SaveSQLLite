@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Money Organizer</string>
+    <string name="deskripsi">deskripsi</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="pendapatan">Pendapatan</string>
+    <string name="money_tracker">Money Tracker</string>
+    <string name="my_name">Dimas Ahmad Zaidan Nuryamin</string>
+    <string name="my_email">nuryamindimas@gmail.com</string>
+    <string name="tambah_transaksi">Tambah Transaksi</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+    
+    <string-array name="kategori">
+        <item>Belanja Bulanan</item>
+        <item>Makanan</item>
+        <item>Pulsa</item>
+        <item>Tagihan Listrik</item>
+        <item>Tagihan PDAM</item>
+        <item>Transportasi</item>
+    </string-array>
+
+</resources>

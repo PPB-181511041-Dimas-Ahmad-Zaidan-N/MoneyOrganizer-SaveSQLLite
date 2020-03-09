@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <LinearLayout
+            android:id="@+id/layout_hariTanggal"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/Gray">
+            <TextView
+                android:id="@+id/tv_hari"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="4dp"
+                tools:text="Hari"
+                android:textColor="@color/White"/>
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="Tanggal"
+                android:textColor="@color/White"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/layout_hariTanggal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/layout_pengeluaran_pendapatan"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/layout_pengeluaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_to_pengeluaran"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pengeluaran"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pengeluaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/Red"
+                        android:textSize="14sp"
+                        tools:text="Jumlah" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_pendapatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_pengeluaran"
+                    android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_to_pendapatan"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pendapatan"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tv_pendapatan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="Jumlah"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/Green"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/panah3"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
